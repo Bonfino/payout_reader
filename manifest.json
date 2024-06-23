@@ -1,0 +1,28 @@
+{
+  "name": "uTest payout reader",
+  "version": "1.0.0",
+  "description": "Automatic reader for payout",
+  "manifest_version": 3,
+  "author": "Alessio Pinto",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "uTest reader"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.utest.com/testcases"],
+      "js": ["content_script.js"]
+    }
+  ],
+  "permissions": ["activeTab", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": ["https://www.utest.com/*"],
+  "icons": {
+    "16": "utest.png",
+    "32": "utest.png",
+    "48": "utest.png",
+    "128": "utest.png"
+  }
+}

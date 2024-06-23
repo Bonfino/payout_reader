@@ -1,0 +1,21 @@
+body{
+    width: 450px;
+    height: 175px;
+}
+
+.window_buttons{
+    display: flex;
+    justify-content: center; /* Centra orizzontalmente */
+    align-items: center; /* Centra verticalmente */
+    margin-top: 30px
+}
+
+.banner h1 {
+    margin: 0;
+}
+.banner {
+    background-color: #3498db; /* Colore azzurro */
+    color: white;
+    padding: 5px;
+    text-align: left;
+  }
