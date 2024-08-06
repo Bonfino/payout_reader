@@ -36,8 +36,12 @@ function extractData() {
 
     sum += parseFloat(payout);
 
+    sum = (sum * 100);
+    sum = Math.round(sum);
+    sum = (sum / 100); 
+
     console.log(payout);
   });
 
-  alert("Upcoming payout: "+ sum);
+  alert("Upcoming payout: " + sum);
 }
